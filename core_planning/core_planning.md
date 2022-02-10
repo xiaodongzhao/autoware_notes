@@ -1,10 +1,15 @@
-## astar_search 
-## costmap_generator 
-## decision_maker 
-## dp_planner 
-## ff_waypoint_follower 
+# astar_search 
+
+# costmap_generator 
+
+# decision_maker 
+
+# dp_planner 
+
+# ff_waypoint_follower 
 
 # lattice_planner 
+
 ## lattice_velocity_set 
 
 Publications:  
@@ -29,9 +34,9 @@ Subscriptions:
 
  
 
-## mpc_follower 
+# mpc_follower 
 
-## op_global_planner 
+# op_global_planner 
 
 generate global path from start point to target point(s) on a map. Planning cost is distance only. supports autoware vector map, and special designed .kml maps. 
 
@@ -49,13 +54,13 @@ Subscriptions:
 - /vector_map_info/*  
 - /occupancy_road_status [nav_msgs::OccupancyGrid] 
 
-## op_local_planner 
+# op_local_planner 
 
-## op_simulation_package 
+# op_simulation_package 
 
-## op_utilities 
+# op_utilities 
 
-## pure_pursuit 
+# pure_pursuit 
 
 Necessary topics are: current_pose, final_waypoints, current_velocity 
 
@@ -79,7 +84,7 @@ Subscriptions:
 - /final_waypoints [autoware_msgs/Lane] 
 - state_machine_lib 
 
-## twist_filter 
+# twist_filter 
 
 Filter input ctrl_raw and twist_raw and publish at ctrl_cmd and twist_cmd 
 
@@ -102,7 +107,7 @@ Subscriptions:
 - /ctrl_raw [autoware_msgs/ControlCommandStamped] 
 - /twist_raw [geometry_msgs/TwistStamped] 
 
-## twist_gate 
+# twist_gate 
 
 Publish vehicle_cmd every loop_rate. cmd can be from: 
 /remote_cmd, or twist_cmd, mode_cmd, gear_cmd, accel_cmd, steer_cmd, brake_cmd, lamp_cmd, ctrl_cmd 
@@ -126,7 +131,7 @@ Subscriptions:
 - /steer_cmd [autoware_msgs/SteerCmd] 
 - /twist_cmd [geometry_msgs/TwistStamped] 
 
-## way_planner 
+# way_planner 
 
 # waypoint_planner 
 
@@ -190,7 +195,7 @@ Subscriptions
 - safety_waypoints[autoware_msgs/Lane]: 
 - /state/stopline_wpidx [std_msgs::Int32] 
 
-## astar_avoid 
+# astar_avoid 
 
 A* avoidance method, see README. 
 
@@ -224,5 +229,5 @@ Subscriptions: (all necessary)
 - /move_base_simple/goal [geometry_msgs/PoseStamped] 
 - /semantics/costmap_generator/occupancy_grid [nav_msgs/OccupancyGrid] 
 
-## wf_simulator 
+# wf_simulator 
 使用接收到的车辆控制信号（v，ω）模拟理想的自身位置和速度 
