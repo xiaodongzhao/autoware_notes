@@ -1,2 +1,2 @@
 # autoware_notes
-Notes for Autoware.Ai 1.14
+Notes for Autoware.AI 1.14
